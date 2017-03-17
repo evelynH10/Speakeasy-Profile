@@ -1,0 +1,150 @@
+/*nav bar*/
+
+.page-breadcrumb {
+    background-color: #173A4A;
+    padding: 40px 0;
+}
+
+.top-bar.dark {
+    background-color: #17988E;
+    border-bottom: 0px;
+}
+
+.top-bar span i {
+    color: #173A4A;
+    margin-right: 5px;
+}
+
+.top-bar span a.apply {
+    color: #fff;
+    background-color: #173A4A;
+}
+
+.contactUs {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.btn-skin{
+            background-color: #17988E ;
+        }
+
+/*ChooseAdventure*/
+
+.activities {
+    list-style-type: none;
+    color: white;
+    font-size: 32px;
+    /*text-align: center;*/
+    line-height: 2;
+    position: absolute;
+    top: 0;
+    bottom: 182px;
+    right: 15px;
+    left: 15px;
+    /*background-color: rgba(17, 221, 167, 0.4);*/
+    background-color: rgba(255, 20, 20, 0.4);
+    cursor: pointer;
+}
+
+.countries {
+    font-size: 16px;
+    list-style-type: none;
+}
+
+a {
+    color: white;
+}
+
+.languageName {
+    font-family: Calligraffitti;
+    font-size: 40px;
+}
+
+h1:first-child {
+    display: none;
+}
+
+.button {
+    margin: 5px;
+}
+
+
+/*singleCourse*/
+
+.course {
+    text-align: center;
+    /*font-family: Poiret One;*/
+}
+
+.leisure {
+    cursor: pointer;
+}
+
+.button {
+    margin: 5px;
+}
+
+.heading {
+    /*margin-left: 100px;*/
+    text-align: center;
+}
+
+.arts,
+.adventure {
+    opacity: 0.5;
+}
+
+/*connect*/
+
+#map-canvas {
+    width: 1100px;
+    height: 500px;
+    background-color: #CCC;
+}
+
+
+/*userProfile*/
+
+.profilepic {
+    padding: 3px;
+    border: 1px solid #021a40;
+}
+
+strong {
+    color: black;
+}
+
+span,
+li {
+    color: black;
+}
+
+.tab-content {
+    padding: 15px;
+    height: 370px;
+}
+
+li.nav-item.active {
+    border-color: #173A4A;
+}
+
+.email {
+    color: black;
+}
+
+#map {
+    width: 100%;
+    height: 370px;
+    background-color: #CCC;
+}
+#map2 {
+    width: 100%;
+    height: 270px;
+    background-color: #CCC;
+}
+
+.quizBox {
+    background-color: lightgrey;
+    padding: 10px;
+}

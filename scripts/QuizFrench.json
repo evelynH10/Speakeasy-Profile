@@ -1,0 +1,50 @@
+[
+    {
+        "id": 902,
+        "quizId": 936,
+        "question": "To which of the following countries would you like to travel?",
+        "answerType": "single",
+        "answers": [
+            {
+                "questionId":902,
+                "answer": "France",
+                "sortOrder": 1
+            },
+            {
+                "questionId": 902,
+                "answer": "Montreal, Canada",
+                "sortOrder": 2
+            },
+            {
+                "questionId": 902,
+                "answer": "Morocco",
+                "sortOrder": 3
+            }
+        ]
+
+    },
+    {
+        "id": 903,
+        "quizId": 936,
+        "question": "What type of activity would you like to be doing?",
+        "answerType": "single",
+        "answers": [
+            {
+                "questionId": 903,
+                "answer": "Adventure",
+                "sortOrder": 1
+            },
+            {
+                "questionId": 903,
+                "answer": "Arts & Culture",
+                "sortOrder": 2
+            },
+            {
+                "questionId": 903,
+                "answer": "Leisure",
+                "sortOrder": 3
+            }
+        ]
+    }
+
+]

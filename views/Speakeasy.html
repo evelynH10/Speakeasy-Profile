@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html ng-app="speakeasy">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SpeakEasy |</title>
+    <!-- Bootstrap -->
+    <link href="/content/assanTheme/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/content/assanTheme/css/animate.css" rel="stylesheet">
+    <link href="/content/assanTheme/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/content/assanTheme/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+    <link href="/content/assanTheme/flexslider/flexslider.css" rel="stylesheet">
+    <link href="/content/assanTheme/owl-carousel/assets/owl.theme.default.css" rel="stylesheet">
+    <link href="/content/assanTheme/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <link href="/content/assanTheme/css/style.css" rel="stylesheet">
+    <link href="/content/assanTheme/rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Calligraffitti" rel="stylesheet">
+    <link href="/scripts/app/Speakeasy/Speakeasy.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+<link rel="icon" type="image/png" href="/content/images/SpeakEasy-32x32.png" sizes="32x32">
+<!--<base href="/home">-->
+</head>
+
+<body>
+    <div id="preloader"></div>
+    <div class="top-bar dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 hidden-xs">
+                    <span><i class="fa fa-phone"></i> +01 185-565-658</span>
+                    <span><i class="fa fa-envelope"></i> support@speakeasy.com</span>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <span><a ui-sref="Login"><i class="fa fa-user"></i> Login</a></span>
+                    <span><a ui-sref="Account" class="apply"><i class="fa fa-pencil"></i> Register</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-inverse navbar-static-top yamm">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                <!--<a class="navbar-brand" href="index.html"><img src="/content/assanTheme/images/logo-light.png" alt=""></a>-->
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a ui-sref="chooseYourAdventure">Choose Your Adventure</a></li>
+                            <li><a ui-sref="FrenchSingleCourse">French Course</a></li>
+                            <li><a ui-sref="Dashboard">User Dashboard</a></li>
+                            <li><a ui-sref="Admin">Admin</a></li>
+                            <li class="dropdown-submenu">
+                                <a tabindex="-1" href="#">More</a>
+                                <ul class="dropdown-menu">
+                                    <li><a tabindex="-1" ui-sref="UserProfile">User Profile</a></li>
+                                  <li><a ui-sref='MexicanCuisine'>Spanish Sample Course</a></li>
+                                </ul>
+                        </ul>
+                        </li>
+                        <li><a ui-sref="courseDashboard">Courses</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a ui-sref="FAQ">F.A.Q</a></li>
+                                <li><a ui-sref="Login">Login</a></li>
+                                <li><a ui-sref="Account">Register</a></li>
+                                <li><a ui-sref="Connect">Connect</a></li>
+                            </ul>
+                        </li>
+                        <li><a ui-sref="BlogYourAdventure">Blogs</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+        <!--/.container -->
+    </nav>
+    <!--/nav end -->
+    <!--Routing-->
+    <div ui-view></div>
+    <!--footer start-->
+    <footer class="footer" id="footer">
+
+        <div class="container">
+            <div class="row">
+               
+                <div class="col-md-3 margin-btm-30">
+          <!--image of logo here maybe-->
+        
+                  <img src="/content/images/speakeasy1.png" alt="">
+                </div>
+               
+                <div class="col-md-3 margin-btm-30" style="float:right">
+                    <h3>Contact us</h3>
+                    <ul class="list-inline footer-social">
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                    <p class="phone"><i class="fa fa-phone"></i> +01 185-565-658</p>
+                    <p>Monday - Friday - 9 AM to 5 PM</p>
+                    <p>Questions: support@speakeasy.com</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <span style="color:white">&copy; Copyright 2017. All Right Reserved. SpeakEasy</span>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+
+
+
+<!--Angular-->
+    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCNda41mrqmOuxsyNDtc7I_B0jFaL-nZwA"></script>
+    <script src="/content/assanTheme/js/jquery.min.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/content/assanTheme/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="/scripts/angular.js"></script>
+    <script src="/scripts/angular-ui-router.js"></script>
+    <script src="/scripts/ui-bootstrap.min.js"></script>
+    <script src="/scripts/ui-bootstrap-tpls.min.js"></script>
+    <script src="/scripts/angular-animate.min.js" type="text/javascript"></script>
+    <script src="/scripts/app/Speakeasy/SpeakeasyModule.js"></script>
+    <script src="/scripts/app/Speakeasy/SpeakeasyConfig.js"></script>
+    <script src="/scripts/app/Speakeasy/SpeakeasyRun.js"></script>
+    <script src="/scripts/app/courseDash/courseDashController.js" type="text/javascript"></script>
+    <script src="/scripts/app/courseDash/courseDFactory.js" type="text/javascript"></script>
+    <script src="/scripts/app/chooseAdventure/ChooseAdventureController.js"></script>
+    <script src="/scripts/app/chooseAdventure/ChooseAdventureFactory.js" type="text/javascript"></script>
+    <script src="/scripts/app/chooseAdventure/ChooseAdventureConfig.js"></script>
+    <!--<script src="/scripts/app/chooseAdventure/ChooseAdventureModalController.js"></script>-->
+    <script src="/scripts/app/usersBlog/userBlogController.js"></script>
+    <script src="/scripts/app/usersBlog/usersBlogServices.js"></script>
+    <script src="/scripts/app/usersBlog/BlogConfig.js"></script>
+    <script src="/scripts/app/frenchSingleCourse/SingleCourseController.js"></script>
+    <script src="/scripts/app/frenchSingleCourse/SingleCourseFactory.js"></script>
+    <script src="/scripts/app/faq/faqsController.js" type="text/javascript"></script>
+    <script src="/scripts/app/faq/faqsFactory.js" type="text/javascript"></script>
+    <script src="/scripts/app/UsersDashboard/userDashboardController.js"></script>
+    <script src="/scripts/app/UsersDashboard/userDashboardServices.js"></script>
+     <script src="/scripts/app/landingPage/landingPageController.js"></script>
+    <script src="/scripts/app/connectWithNearbyUsers/connectUsersController.js"></script>
+    <script src="/scripts/app/connectWithNearbyUsers/connectUsersFactory.js"></script>
+    <script src="/scripts/app/admin/adminController.js" type="text/javascript"></script>
+    <script src="/scripts/app/admin/adminFactory.js" type="text/javascript"></script>
+    <script src="/scripts/app/userprofile/profileController.js" type="text/javascript"></script>
+    <script src="/scripts/app/userprofile/profileFactory.js" type="text/javascript"></script>
+    <script src="/scripts/app/loginNg/loginController.js"></script>
+    <script src="/scripts/app/loginNg/loginServices.js"></script>
+    <!-- jQuery -->
+    <script src="/content/assanTheme/js/jquery.stellar.min.js"></script>
+    <script src="/content/assanTheme/flexslider/jquery.flexslider-min.js"></script>
+    <script src="/content/assanTheme/owl-carousel/owl.carousel.min.js"></script>
+    <script src="/content/assanTheme/lightbox2/dist/js/lightbox.min.js" type="text/javascript"></script>
+    <script src="/content/assanTheme/js/custom.js"></script>
+    <!--revolution slider plugins-->
+    <script src="/scripts/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+    <script src="/scripts/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/scripts/revolution-custom.js"></script>
+    <script type="text/javascript" src="/scripts/sabio.js"></script>
+    <script src="/scripts/sabio.services.getProfileId.js"></script>
+    <script src="/scripts/sabio.services.login.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.validate.js"></script>
+    <script type="text/javascript">
+        // sabio.page.userId = sessionStorage.getItem("user");
+        //   sabio.page.userId = parseInt(sessionStorage.getItem("user"));
+
+        sabio.page.UserId = sessionStorage.getItem("user");
+
+   
+    </script>
+</body>
+
+</html>

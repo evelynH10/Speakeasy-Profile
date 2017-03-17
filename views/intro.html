@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>SpeakEasy</title>
+        <!-- Bootstrap -->
+        <link href="content/css/bootstrap.min.css" rel="stylesheet">
+        <link href="content/assanTheme//css/animate.css" rel="stylesheet">
+        <link href="content/assanTheme/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="content/assanTheme/owl-carousel/assets/owl.carousel.css" rel="stylesheet">
+        <link href="content/assanTheme/owl-carousel/assets/owl.theme.default.css" rel="stylesheet">
+        
+        <link href="content/assanTheme/flexslider/flexslider.css" rel="stylesheet">
+        <!--Revolution slider css-->
+        <link href="content/assanTheme/rs-plugin/css/settings.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="content/assanTheme/css/style.css" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <style>
+     body {
+  background-color: black;
+  
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: translate(460px, -100px) rotate(180deg);
+  -ms-transform: translate(460px, -100px) rotate(180deg);
+  transform: translate(460px, -100px) rotate(180deg);
+  -webkit-transition: all 0.2s 0.4s ease-in-out;
+  transition: all 0.2s 0.4s ease-in-out;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hovereffect a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  margin: 50px 0 0 0;
+  background-color: transparent;
+  -webkit-transform: translateY(-200px);
+  -ms-transform: translateY(-200px);
+  transform: translateY(-200px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+}
+
+.hovereffect:hover h2 {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.hovereffect:hover a.info {
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.img-responsive{
+    background: cover;
+  
+}
+src {
+    background-image: cover;
+    width: 1050px;
+    
+}
+h1{
+  color:#fff;
+}
+#bg {
+  position: center; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 80%;
+  min-height: 80%;
+}
+
+    </style>
+
+<body>
+   
+   <div>
+    <div class="hovereffect">
+        <img class="img-responsive" src="views/opendoor.jpg" id="bg">
+        <div class="overlay">
+           <h2>SpeakEasy</h2>
+           <h1>The Secret to language success! </h1>
+           <a class="info" href="landingpage.html">ENTER</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+  <!-- jQuery -->
+        <script src="scripts/jquery.min.js"></script>
+        <script src="scripts/bootstrap.min.js"></script>
+        <script src="scripts/wow.min.js"></script>
+        <script src="scripts/bootstrap-hover-dropdown.min.js"></script>
+        <script src="scripts/jquery.stellar.min.js"></script>
+        <script src="scripts/jquery.flexslider-min.js"></script>
+        <script src="scripts/owl.carousel.min.js"></script>
+        <script src="scripts/custom.js"></script>
+        <!--revolution slider plugins-->
+        <script src="scripts/jquery.themepunch.tools.min.js" type="text/javascript"></script>
+        <script src="scripts/jquery.themepunch.revolution.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="scripts/revolution-custom.js"></script>
+    </body>
+</html>
+
+

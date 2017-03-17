@@ -1,0 +1,129 @@
+
+    <div class="page-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h2>Profile account</h2>
+                </div>
+                <div class="col-sm-6 text-right">
+                    <ol class="breadcrumb">
+                        <li><a ui-sref="home">Home</a></li>
+                        <li>Profile</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space70"></div>
+    <!--Profile Content-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>
+                    <div id="name" class="name" name="firstName">{{profile.profile.firstName}}</div>
+                    <span id="lname" class="lname" name="lastName">{{profile.profile.lastName}}</span></h3>
+                <div class="login-register-form">
+                        
+                    <img class="profilepic" id="profileImg" name="fileKey" ng-src="/content/images/anabelle.jpeg" alt="Profile image" width="150px" height="150px">
+
+                    <br>
+                    <input type="checkbox" ng-model="emailHide">
+                    <p>Check to show email</p>
+                    <h5 id="emailG" class="email" ng-show="emailHide" name="email">{{profile.profile.email}}</h5><br>
+                    <button type="button" class="btn btn-lg  btn-skin" href="landingpage.html"><a  href="landingpage.html">Logout</a></button>
+                </div>
+            </div>
+
+           <!-- Nav tabs -->
+            <div class="col-sm-6">
+                    
+                     </div>
+           
+               <div class="col-sm-6"> 
+             <uib-tabset justified="true">
+            <uib-tab heading="About" >
+                <uib-accordion>
+                    <div id="aboutUp" style="font-size: 16px"><strong>About Me</strong><br>
+                           <br> <p id="contentUp" style="color:black">{{profile.profile.aboutStatement}} </p>
+                        </div>
+                     </uib-accordion>
+            </uib-tab>
+            <!--tab panes for address-->
+            <uib-tab heading="Location" style="color:black">
+                     <div class="location" style="font-size: 16px"><strong>Address:</strong> </div><br>
+                        <span id="loc2"><h5> {{profile.profile.addressLine1}} {{profile.profile.addressLine2}}<br> {{profile.profile.city}} {{profile.profile.stateProvinceCode}} {{profile.profile.zip}}</h5></span>
+                       <form ng-submit="profile.Address()" ng-hide="form">
+                            <div class="form-group">
+                                <input type="text" class=" form-control " id="addr" name="adress" ng-model="profile.profile.addressLine1" placeholder="Address Line 1">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class=" form-control " id="lname" name="lastName" ng-model="profile.profile.addressLine2" placeholder="Address Line 2">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class=" form-control " id="loc" name="city" ng-model="profile.profile.city" placeholder="City">
+                                <span class="input-icon"><i class=" fa fa-map-marker"></i></span>
+                            </div>
+                            <div class="row">
+                                  <div class="col-sm-4">
+                            <div class="form-group">
+                                <input type="text" class=" form-control " id="state" name="stateC" ng-model="profile.profile.stateProvinceCode" placeholder="State">
+                            </div></div>
+                             <div class="col-sm-4">
+                             <div class="form-group">
+                                <input type="text" class=" form-control " id="locZ" name="zip" ng-model="profile.profile.zip" placeholder="Zip Code">
+                            </div></div></div>
+                        <button type="submit" class="btn btn-lg btn-skin" >Edit Address</button>
+                       </form><br>
+                    <button type="button" class="btn btn-sm btn-skin" ng-click="form=!form" id="mapBtn" style="display:none">Show Map</button>
+                       <div ng-show="form"></div>
+                 </uib-tab>
+                 <!--tab panes for update form-->
+                   <uib-tab heading="Settings">
+                        <form id="tabForm" ng-submit="profile.UpdateForm()" ng-submit="profile.UpdateAbout()"> 
+                            <div class="form-group">
+                                <input type="text" class=" form-control " id="name" name="firstName" ng-model="profile.profile.firstName" placeholder="First Name">
+                                <span class="input-icon"><i class=" fa fa-user"></i></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class=" form-control " id="lname" name="lastName" ng-model="profile.profile.lastName" placeholder="Last Name">
+                                <span class="input-icon"><i class=""></i></span>
+                            </div>
+                             <div class="form-group">
+                                <input type="text" class=" form-control "  name="email" ng-model="profile.profile.email" placeholder="email">
+                                <span class="input-icon"><i class=""></i></span>
+                             </div>
+                            <textarea class="form-control" id="content" name="aboutStatement" ng-model="profile.profile.aboutStatement" placeholder="About"></textarea>
+                            <br>
+                            <button type="submit" class="btn btn-lg btn-block btn-skin" id="editP">Edit Profile</button>{{profile.ServerResponse}}
+                        </form>
+                 </uib-tab>
+                  </div>
+                  <div class="col-sm-4"></div>
+                   <div data-ng-show="geo.geocodeResponse">
+                            <pre>
+                        {{geo.geocodeResponse}}
+                        </pre>
+                        </div>
+                   
+                     <div id="map2" style="width:50%"></div></div>
+
+            </div><!-- Tab panes and profile content end-->
+
+       
+    </div>
+    </div>
+    <div class="space70"></div>
+    <!--footer start-->
+   
+    <!--footer end-->
+   
+    </div>
+ <script type="text/javascript">
+       
+
+        sabio.page.UserId = 236;
+
+   
+    </script>
+  
+

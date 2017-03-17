@@ -1,0 +1,50 @@
+[
+    {
+        "id": 900,
+        "quizId": 935,
+        "question": "To which of the following countries would you like to travel?",
+        "answerType": "single",
+        "answers": [
+            {
+                "questionId":900,
+                "answer": "Argentina",
+                "sortOrder": 1
+            },
+            {
+                "questionId": 900,
+                "answer": "Mexico",
+                "sortOrder": 2
+            },
+            {
+                "questionId": 900,
+                "answer": "Spain",
+                "sortOrder": 3
+            }
+        ]
+
+    },
+    {
+        "id": 901,
+        "quizId": 935,
+        "question": "What type of activity would you like to be doing?",
+        "answerType": "single",
+        "answers": [
+            {
+                "questionId": 901,
+                "answer": "Adventure",
+                "sortOrder": 1
+            },
+            {
+                "questionId": 901,
+                "answer": "Arts & Culture",
+                "sortOrder": 2
+            },
+            {
+                "questionId": 901,
+                "answer": "Leisure",
+                "sortOrder": 3
+            }
+        ]
+    }
+
+]
